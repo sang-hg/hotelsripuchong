@@ -1,0 +1,267 @@
+/* index main */
+
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+#banner {
+    display: flex;
+    padding: 1% 2% 1% 20%;
+}
+
+.navbar ul {
+    display: flex;
+    place-content: center;
+}
+
+.navbar li {
+    text-align: center;
+    list-style: none;
+    margin: 0 5%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(154, 131, 0);
+}
+
+.navbar a:hover {
+    color: rgb(156, 24, 24);
+}
+
+.navicon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.navicon {
+        float: left;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar .responsive {position:relative}
+    .navbar .responsive .navicon {
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    .navbar .responsive a{
+        float:none;
+        display: block;
+        text-align: left;
+    }
+}
+
+image {
+    display: block;
+}
+
+#aboutus {
+    display: block;
+    padding: 0% 2% 0% 2%;
+    text-align: justify;
+    line-height: 1.5em;
+    color: rgb(75, 65, 65);
+
+}
+
+#gmap {
+    padding: 0% 2% 0% 2%;
+}
+
+.location {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.location div {
+    padding: 10%;
+    text-align: justify;
+    place-content: center;
+}
+
+.location img {
+    border-radius: 50px 0px 50px 0px;
+}
+
+.location address, article {
+    line-height: 1.5em;
+    color: rgb(75, 65, 65);
+}
+
+.location a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+/*foorter*/
+
+.footer {
+    display: flex;
+    background-color: rgb(89, 79, 82);
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(138, 138, 138);
+}
+
+.footer ul {
+    flex: 1;
+    list-style: none;
+    line-height: 3em;
+    margin: 4%;
+}
+
+.footer li {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 100%;
+}
+
+.footer a {
+    color: rgb(138, 138, 138);
+    text-decoration: none;
+}
+
+.footer div {
+    flex: 1;
+    text-align: center;
+}
+
+/* gallery */
+
+.cardroom {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 4, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.cardroom div {
+    padding: 5% 15% 0% 15%;
+}
+
+.cardroom img {
+   border-radius: 50px 0px 50px 0px;
+}
+
+.cardroom ul {
+    place-content: center;
+    list-style: circle;  
+    position: relative;
+    left: 5%;
+}
+
+.cardroom li {
+    padding: 1%;
+}
+
+.cardroom button {
+    font-size: medium;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    border: 2px solid darkgreen ;
+    position: relative;
+    left: 30%;
+    margin: 2%;
+}
+
+.cardroom button:hover {
+    background-color: darkgreen;
+    color: white
+}
+
+/* private policy */
+
+.privatepolicy {
+    padding: 2% 10% 2% 10%;
+    text-align: justify;
+}
+
+/* opportunities */
+
+.opportunities {
+    padding: 2% 5% 2% 5%;
+}
+
+.opportunities p {
+    text-align: justify;
+}
+
+.opportunities a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.jopening {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4em;
+}
+
+/* reservation */
+
+.reservation {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 2% 5% 2% 5%;
+    gap: 2%;
+}
+
+.reservation li {
+    line-height: 1.5rem;
+}
+
+.rform {
+    background-color: rgb(179, 202, 184);
+    border-radius: 25px;
+    padding: 10%;
+}
+
+#datetime{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 120px;
+}
+
+.rform input {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 15px; 
+    width: 250px;
+    height: 10px;  
+    font-size: medium;
+}
+
+.rform select {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 5px; 
+    width: 100px;
+    height: 35px;
+    font-size: 0.9em;
+}
+
+.rform #checkbox {
+    border-radius: 15px;
+    border: 2px solid #73AD21; 
+    width: 30px;
+    height: 15px;
+}
+
+.rform #submitb {
+    border-radius: 25px;
+    border: 2px solid #ffffff; 
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    color: aliceblue;
+    background-color: #73AD21;
+}
+

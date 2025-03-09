@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/icon" rel="icon" href="sphPhotos/footagelogo.png">
+    <title>Sri Puchong Hotel</title>
+    <meta name="author" content="Sri Puchong Hotel">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <hsp-header></hsp-header>
+    <hsp-navbar></hsp-navbar>
+    <main>
+        <div class="reservation">
+            <div>
+                <form action="mailto:" method="post" enctype="text">
+                    <Fieldset class="rform"><br>
+                        <legend></legend>
+                        <label for="fname">First, Last Name:</label>
+                        <input type="text" id="fname" placeholder="First and Last Name" required><br><br>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" placeholder="your@email.com" required><br><br>
+                        <label for="phone">Mobile Phone:</label>
+                        <input type="tel" id="tel" placeholder="00-0000-0000" required><br><br>
+                        <label for="cidate">Check-in Date:</label>
+                        <input type="date" id="datetime" placeholder="mm/dd/yyyy" required><br><br>
+                        <label for="codate">Check-out Date:</label>
+                        <input type="date" id="datetime" placeholder="mm/dd/yyyy" required><br><br>
+                        <label for="rtype">Standard Type:</label>
+                        <select id="rtype" required>
+                            <option value="Standard Junior">Double</option>
+                            <option value="Sandard Twin">Twin</option>
+                            <option value="Standard Double">Family 3</option>
+                            <option value="Standard Family 3">Family 4</option>
+                            <option value="Standard Family 4">Junior</option>
+                        </select><br><br>
+                        <label for="tlroom">Total Room:</label>
+                        <select id="tlroom" required>
+                            <option value="one">1 Room</option>
+                            <option value="two">2 Rooms</option>
+                            <option value="three">3 Rooms</option>
+                            <option value="four">4 Rooms</option>
+                            <option value="five">5 Rooms</option>
+                            <option value="six">6 Rooms</option>
+                            <option value="seven">7 Rooms</option>
+                            <option value="eight">8 Rooms</option>
+                            <option value="nine">9 Rooms</option>
+                            <option value="ten">10 Rooms</option>
+                        </select><br><br>
+                        <input id="checkbox" type="checkbox" required>
+                        <label id="agree" for="agree">Agree to our Privacy Policy and Terms of Service.</label><br>
+                        <input id="checkbox" type="checkbox" required>
+                        <label for="rev24">Subject to room availability and made 24 hours in advance.</label><br><br>
+                        <input id="submitb" type="submit" value="Submit"><br><br>
+                    </Fieldset>
+                </form>
+            </div>
+            <div>
+                <ul>
+                    <h4>Standard (Double and Twin) booking </h4>
+                    <li>We accept booking a maximum of 15 Rooms only.</li>
+                    <li>Please settle the full payment 3 days in advance of the check-in date for the above 4 rooms booking.</li>
+                    <li>Please Mail (or) fax us the guest name list and payment receipt. </li>
+                </ul><br>
+                <ul>
+                    <h4>Standard (Family 3 and 4) booking</h4>
+                    <li>We accept booking a maximum of 2 Rooms only.</li>
+                    <li>Please settle the full payment 3 days in advance of the check-in date for the above one room booking.</li>
+                    <li>Please Mail (or) fax us the guest name list and payment receipt.</li>
+                </ul><br>
+                <ul>
+                    <h4>Payment & transaction</h4>
+                    <li>Cash, Bank-in, or Online Bank-in.</li>
+                    <li>Hotel Sri Puchong Sdn Bhd (Public Bank: 3211-6685-33)</li>
+                    <li>Room rentals are nonrefundable and carried forward.</li>
+                    <li>Rentals are inclusive of 6% government service and sales tax.</li>
+                    <li>Foreign tourists apply a tourism tax of RM 10.00 per room per night.</li>
+                    <li>Rates are subject to change without prior notice.</li>
+                </ul><br>
+            </div>
+        </div>
+    </main>
+    <hsp-footer></hsp-footer>
+</body>
+</html>
